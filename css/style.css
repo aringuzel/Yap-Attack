@@ -1,0 +1,360 @@
+/* General Styles */
+html, body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #000;
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.delete-btn {
+    background-color: turquoise;
+    border: none;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block; /* Makes the button a block-level element */
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-top: 10px; /* Optional: Adds some spacing between the button and the text above */
+    width: fit-content;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 50%;
+    size: 50%;
+    margin-top: 80px;
+}
+
+.nav_label {
+    color: #000;
+    text-align: center;
+}
+
+.nav_label_center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+}
+
+nav {
+    text-align: center;
+    width: 10%;
+}
+
+/* Initially hide the sidebar off-screen */
+ul {
+    width: 0;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: left 0.3s ease;
+}
+
+/* Add a button for toggling the sidebar */
+.nav-toggle {
+    display: block;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    top: 15px;
+    z-index: 1000;
+    left: 15px;
+}
+
+/* Show the sidebar when toggled */
+ul.show {
+    left: 0; /* Move the sidebar into view */
+    width: 15%; /* Or whatever width you want for the sidebar */
+    transition: left 0.3s ease; /* Smooth transition effect */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(226,226,226);
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    border-right: 2px solid #ccc;
+    top: 0;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+  
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+.nav_bottom {
+    left: 0;
+    bottom: 5px;
+    right: 0;
+    position: absolute;
+    text-align: center;
+}
+
+a {
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.container {
+    padding: 1px 16px;
+    height: 100%;
+    text-align: center;
+}
+
+.btn {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 15px;
+    display: inline-block;
+    font-size: 13px;
+    cursor: pointer;
+    width: 60%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.btn2 {
+    cursor: pointer;
+}
+
+.dark-mode {
+    background-color: #111;
+    color: white;
+}
+
+/* Additional Styles */
+.form, .load{
+    width: 50%;
+    margin: 0 auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.red {
+    color: red;
+}
+
+/*Class controlling the appearance of the "Send Idea" button*/
+.button-primary {
+    background-color: turquoise;
+    border: none;
+    color: black;
+    padding: 15px 15px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    cursor: pointer;
+    margin-top: 10px;
+    height: auto;
+    border-radius: 30px;
+}
+
+/*Class controlling the appearance of the ideas container [the outline box around the shared ideas]*/
+.yay {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+
+/*Class controlling the Username appearance on the post function*/
+.Uname {
+    border: 2px solid;
+    border-radius: 4px;
+}
+
+/* Style inputs */
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#posts-container {
+    margin-top: 20px;
+    text-align: center;
+    padding: 1px 16px;
+    height: 1000px;
+}
+  
+.post {
+    border: 1px solid darkgray;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+  
+.post h3 {
+    word-wrap: break-word;
+      overflow-wrap: break-word;
+}
+
+.post p {
+    margin: 5px 0;
+    word-wrap: break-word;
+      overflow-wrap: break-word;
+}
+  
+.post small {
+    color: #888;
+    font-size: 0.9em;
+}
+
+.top {
+    text-align: center;
+    background-color: #333;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    position: fixed;
+    font-size: 13px;
+    bottom: 5px;
+    cursor: pointer;
+    left: 50%; /* Position it in the center horizontally */
+    transform: translateX(-50%); /* Adjusts the element to center it exactly */
+    z-index: 1000;
+}
+
+.char {
+    color: red;
+}
+
+.user {
+    font-size: 25px;
+}
+
+/* Mobile / Tablet Styles */
+@media (max-width: 980px) {
+
+    #posts-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 posts per row on medium screens */
+    }
+
+    .post {
+        padding: 15px; /* Increase padding on medium screens for better readability */
+    }
+
+    h1 {
+        margin-top: 70px;
+    }
+
+    /* Initially hide the sidebar off-screen */
+    ul {
+        width: 0;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        transition: left 0.3s ease;
+    }
+
+    /* Add a button for toggling the sidebar */
+    .nav-toggle {
+        display: block;
+        background-color: #333;
+        color: white;
+        padding: 15px;
+        font-size: 25px;
+        border: none;
+        cursor: pointer;
+        position: fixed;
+        top: 15px;
+        left: 15px;
+        z-index: 1000;
+    }
+
+    /* Show the sidebar when toggled */
+    ul.show {
+        left: 0; /* Move the sidebar into view */
+        width: 250px; /* Or whatever width you want for the sidebar */
+        transition: left 0.3s ease; /* Smooth transition effect */
+    }
+
+    img {
+        size: 30%;
+        width: 30%;
+    }
+}
+
+/* For mobile small screen button */
+@media (max-width: 480px) {
+    .nav-toggle {
+        font-size: 20px;
+    }
+
+    ul.show {
+        width: 100%;
+    }
+
+    img {
+        width: 20%;
+    }
+
+    #posts-container {
+        grid-template-columns: 1fr; /* 1 post per row on small screens */
+    }
+
+    .post {
+        padding: 12px; /* Reduce padding a bit */
+    }
+
+    .post h3 {
+        font-size: 1.1em; /* Adjust font size for title */
+    }
+
+    .post p {
+        font-size: 0.9em; /* Adjust font size for content */
+    }
+
+    .post small {
+        font-size: 0.8em; /* Adjust small text size */
+    }
+
+    ul.show ~ .top {
+        display: none; /* Ensures it stays hidden when sidebar is open */
+    }
+}

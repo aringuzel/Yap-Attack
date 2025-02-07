@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Home / Yap Attack</title>
+    <link href="/css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href='/images/ShareSpace.png'>
+  </head>
+  
+  <body>
+
+    <nav class="nav">
+      <button class="nav-toggle" id="toggleButton">&#9776;</button>
+    
+      <ul id="sidebar">
+        <a href="/index.html"><img src="/images/ShareSpace-removebg-preview.png" alt="Logo"></a>
+        <div class="nav_label">
+          <div class="nav_label_center">
+            <li><strong>Settings:</strong></li>
+            <button class="btn" id="logout-btn">Logout</button>
+            <button class="btn" id="login-btn">Login</button>
+            <br>
+            <div class="red">
+              <li>Customisation:</li>
+            </div>
+            <button class="btn" id="Darkmode-HTML">Dark mode</button>
+            <br>
+            <div id="custom" class="nav_label">
+              <label for="bg-input">Upload Background Image:</label>
+              <input class="btn" type="file" id="bg-input" accept="image/*">
+            </div>
+            <button class="btn" id="remove-bg">Remove</button>
+          </div>
+          <div class="nav_bottom">
+            <li><strong>Credit:</strong></li>
+            <a class="a" href="https://linktr.ee/aringuzel">Made by Arin</a>
+          </div>
+        </div> 
+      </ul>
+    </nav>
+    
+  
+    <div class="container">
+
+      <h1 id="top">Yap Attack</h1>
+
+      <p><strong>Note:</strong> Hopefully you enjoy this project. It was made in honour of my A-level Computer Science NEA, EcoVerse (real ones will know).</p>
+
+      <!-- Placeholder for the user's name -->
+      <div id="user-name-container">
+        <p class="user" id="user-name">Loading...</p> <!-- This will be replaced by the user's name -->
+      </div>
+
+      <!--Posting feature code-->
+      <form class="form">
+        <!--label for="name">Yapper Tag</label>
+        <input class="Uname" type="text" id="uname" name="name" maxlength="20" required!-->
+      
+        <label for="content">Yapperoo</label>
+        <textarea class="yay" type="text" id="content" name="content" maxlength="445" required></textarea>
+        <p class="char">Characters left: <span id="charCount">445</span></p>
+      
+        <!-- Submit button inside the form -->
+        <button type="submit" id="submit" class="button-primary">Yap</button>
+      </form>
+
+      <h2>Our Yap:</h2>
+      <div id="posts-container">
+        <!-- Posts will appear here -->
+      </div>
+
+      <footer>
+        <a class="top" href="#top">Click here to go back to the top</a>
+      </footer>
+
+    </div>
+    
+    <script type="module" src="/backend/script.js"></script>
+  </body>
+
+</html>

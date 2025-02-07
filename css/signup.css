@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: url('/images/back2.png');
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: fixed;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    height: 12%;
+    position: relative;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+    display: block; /* Ensures proper centering */
+    margin: 0 auto;
+}
+
+.menu-icon {
+    width: 30px;
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+
+nav ul li a,
+.translate {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    border-color: #333;
+    background-color: #000;
+}
+
+/*nav ul li a{
+text-decoration: none;
+color: #fff;
+font-size: 13px;
+border-radius: 20px;
+box-sizing: 20px;
+border-color: #000;
+}*/
+
+.title {
+    text-align: center;
+}
+
+h1 {
+    color: #000;
+    font-size: 100px;
+}
+
+p {
+    color: #000;
+    font-size: 15px;
+    line-height: 14px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"], input[type="password"] {
+    background: #000;
+    width: 300px;
+    border: 20px #fff;
+    border-bottom: 2px solid #fff;
+    margin: 10px;
+    padding: 5px;
+    color: #fff;
+    font-size: 15px
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+input:focus {
+    border: none;
+}
+
+.user-box {
+    padding-top: 20px;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+}
+
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1000px;
+    padding-top: 20px;
+    transform: translate(-50%, -50%);
+    background: #000;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.6);
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    margin-top: 60px;
+}
+
+label {
+    color: #fff;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.buttons{
+    width: 200px;
+    margin: 0 auto;
+    display: inline;
+}
+
+.action_btn {
+    width: 200px;
+    margin: 0 auto;
+    display: inline;
+}
+
+.submit-btn {
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom:0;
+    text-align: center;
+    color: black;
+}
+
+/* Responsive Design for Mobile & Tablet */
+@media screen and (max-width: 980px) {
+    .navbar {
+        flex-direction: column; /* Stack items vertically */
+        height: auto; /* Adjust height dynamically */
+    }
+
+    .box {
+        width: 90%; /* Make the form box fit smaller screens */
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 60px; /* Reduce text size */
+    }
+
+    input[type="text"], input[type="password"] {
+        width: 90%; /* Expand input fields for mobile */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo {
+        width: 120px; /* Adjust logo size for small screens */
+    }
+
+    .box {
+        width: 100%; /* Full width for mobile */
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 40px; /* Further reduce heading size */
+    }
+
+    .submit-btn {
+        width: 100%; /* Full width button for small screens */
+    }
+
+    .buttons, .action_btn {
+        flex-direction: column; /* Stack buttons on small screens */
+        gap: 5px; /* Reduce spacing */
+    }
+}
