@@ -5,7 +5,7 @@ import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/fi
 // Firebase configuration
 const firebaseConfig = {
 
-  apiKey: "AIzaSyBe1TiqYnc05q6r3G6MDIouR3QUn1eIrcI",
+  apiKey: "",
   authDomain: "share-ideas-af309.firebaseapp.com",
   projectId: "share-ideas-af309",
   storageBucket: "share-ideas-af309.firebasestorage.app",
