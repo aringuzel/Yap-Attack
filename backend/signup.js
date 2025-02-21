@@ -10,11 +10,11 @@ import { getFirestore, doc, setDoc } from "https://www.gstatic.com/firebasejs/11
 const firebaseConfig = {
 
     apiKey: "",
-    authDomain: "share-ideas-af309.firebaseapp.com",
-    projectId: "share-ideas-af309",
-    storageBucket: "share-ideas-af309.firebasestorage.app",
-    messagingSenderId: "757953988207",
-    appId: "1:757953988207:web:fe8a929c63bac73fd66f9a"
+    authDomain: "",
+    projectId: "",
+    storageBucket: "",
+    messagingSenderId: "",
+    appId: ""
   
 };
 
